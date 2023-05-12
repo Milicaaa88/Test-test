@@ -1,0 +1,24 @@
+{
+  "name": "test-test",
+  "version": "1.0.0",
+  "description": "Milica's test case",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --no-timeouts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mochawesome": "^7.1.3",
+    "selenium-webdriver": "^4.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
