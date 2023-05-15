@@ -23,14 +23,14 @@ describe("Read product reviews", () => {
         await driver.findElement(By.id('search')).sendKeys('bag', Key.RETURN);
         
         // Wait for the reviews section to load
-        await driver.wait(until.elementLocated(By.css('.action.view')), 10000);
-        await driver.findElement(By.css('.action.view')).click();
+        await driver.wait(until.elementLocated(By.css('a[href="https://magento.softwaretestingboard.com/push-it-messenger-bag.html#reviews"]')), 10000);
+        await driver.findElement(By.css('a[href="https://magento.softwaretestingboard.com/push-it-messenger-bag.html#reviews"]')).click();
        
         // Wait for 2 sec
         await driver.sleep(2000);
 
         // Find all review comments
-        const reviewComments = await driver.findElements(By.css('.reviews > .review-content'));
+        const reviewComments = await driver.findElements(By.css('a[href="https://magento.softwaretestingboard.com/push-it-messenger-bag.html#reviews"]'));
 
 
       } catch (error) {
